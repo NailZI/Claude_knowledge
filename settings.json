@@ -10,7 +10,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"$hasClaudeDir = Test-Path '.claude'; $hasFiles = (Get-ChildItem -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -notin @('.gitignore','README.md') }).Count -gt 0; if (-not $hasClaudeDir -and -not $hasFiles) { Write-Output 'SYSTEM: Новый пустой проект обнаружен. Автоматически применяй скилл project-structure: спроси тип и название проекта, создай README.md и .gitignore, остальные папки создавай только по мере появления файлов.' }\""
+            "command": "powershell -NoProfile -Command \"$hasClaudeDir = Test-Path '.claude'; $hasFiles = (Get-ChildItem -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -notin @('.gitignore','README.md') }).Count -gt 0; if (-not $hasClaudeDir -and -not $hasFiles) { Write-Output 'SYSTEM: Empty project folder detected. Use project-manager agent to initialize: ask project type and name, create README.md, .gitignore and doc/TODO.md. Create other folders only as files appear. Do NOT use scaffold skill.' }\""
           },
           {
             "type": "command",
