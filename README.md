@@ -31,6 +31,7 @@ Copy-Item hooks\* "$env:USERPROFILE\.claude\hooks\"
 | `github-specialist` | Ежедневный push, создание PR и релизов, управление Issues, работа с ветками через `gh` CLI и `git`; самообучающийся — запоминает стиль commit messages и workflow |
 | `powershell-specialist` | Написание, отладка и выполнение PowerShell скриптов; самообучающийся — запоминает предпочтения по стилю кода и удачные решения |
 | `project-manager` | Инициализация нового проекта: создаёт README.md, .gitignore, doc/TODO.md, локальных агентов под тип задачи; управляет структурой папок по ходу проекта |
+| `remote-ops-specialist` | Автоматизация удалённых Windows-машин через paramiko (SSH/SFTP) — выполнение команд, перенос файлов, надёжный запуск долгоживущих процессов, диагностика зависших процессов, очистка после экспериментов; самообучающийся — запоминает рабочие паттерны и грабли по машинам |
 
 Каждый агент с пометкой «самообучающийся» читает и обновляет свой файл базы знаний (`*-knowledge.md`) после каждой сессии.
 
@@ -80,4 +81,4 @@ Copy-Item hooks\* "$env:USERPROFILE\.claude\hooks\"
 ```
 
 Агенты вызываются автоматически по контексту или явно через `@имя`:
-`@doc-specialist`, `@github-specialist`, `@powershell-specialist`, `@project-manager`.
+`@doc-specialist`, `@github-specialist`, `@powershell-specialist`, `@project-manager`, `@remote-ops-specialist`.
