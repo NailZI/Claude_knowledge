@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runbook"
+  short_description: "Diagnose failures step by step"
+  default_prompt: "Use $runbook to diagnose this issue from symptoms to root cause."

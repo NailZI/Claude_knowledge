@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scaffold"
+  short_description: "Create a minimal project skeleton"
+  default_prompt: "Use $scaffold to create a minimal project skeleton for this task."

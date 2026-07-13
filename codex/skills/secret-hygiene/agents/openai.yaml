@@ -1,0 +1,4 @@
+interface:
+  display_name: "Secret Hygiene"
+  short_description: "Audit secret leaks and .gitignore"
+  default_prompt: "Use $secret-hygiene to audit this project for leaked secrets and unsafe secret handling."

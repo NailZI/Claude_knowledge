@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Structure"
+  short_description: "Place files in the right folders"
+  default_prompt: "Use $project-structure to decide where files should live in this project."
